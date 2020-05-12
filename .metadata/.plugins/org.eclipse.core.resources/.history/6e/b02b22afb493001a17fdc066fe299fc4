@@ -1,0 +1,48 @@
+package teste;
+
+import javax.swing.JOptionPane;
+
+import beans.Bacharelado;
+import beans.Medio;
+import beans.Tecnologo;
+
+public class testeInstancia {
+	
+	public static void main(String args[]) {
+		
+		///////////////////////// Instacmcia todas as classes filhas
+		Tecnologo objTecnologo = new Tecnologo();
+		Medio objMedio = new Medio();
+		Bacharelado objBacharelado = new Bacharelado();
+		
+		String resposta = JOptionPane.showInputDialog("QUal formacao deseja cadastrar? \n <M> \n <T> \n <B>").toUpperCase();
+		
+		if (resposta.contentEquals("L")) {
+			
+			livro.setAll(
+					inteiro("\n insira o codigo \n"),
+					decimal("\n insira o valoro \n"),
+					texto("insira a descricao "),
+					texto("insira o ISBN "),
+					texto("insira o Autor"));
+			System.out.println("\n" + livro.getAll());
+		} 
+		else if (resposta.contentEquals("C")) {
+			cd.setAll(
+					inteiro ("\n insira o codigo \n"),
+					decimal ("\n insira o valoro \n"),
+					texto ("insira a descricao "),
+					texto ("insira o ISBN "),
+					texto ("insira o Autor"));
+			System.out.println("\n" + cd.getAll());
+		}
+		else {
+						
+			System.out.println("Opacao invalida");
+		}	
+		
+		
+		
+	}
+
+}

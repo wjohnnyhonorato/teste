@@ -1,0 +1,23 @@
+package br.com.itau.beans.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.itau.beans.modelo.CompactDisc;
+import br.com.itau.beans.modelo.Livro;
+
+public class PrincipalsegundoTeste {
+	
+	public static void main(String args[]) {
+		
+;
+		
+		CompactDisc cd = new CompactDisc();
+		Livro livro = new Livro();
+		string resposta = JOptionPane.showInputDialog("digite: \n <L> para livro ou \n <C> para CD");
+		
+		
+	 
+	
+		}
+	}
+

@@ -1,0 +1,14 @@
+package teste;
+
+import modelo.Endereco;
+import modelo.Professor;
+
+public class TesteSetAll {
+
+	public static void main(String[] args) {
+		
+		
+		
+	Professor objetoProfessor = new Professor("Madruga", "madruguinha", "filosofia",new Endereco("X", "1A", "bla", "sao paulo", "SP","rere") );
+	}
+}

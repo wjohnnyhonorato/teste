@@ -1,0 +1,11 @@
+package teste;
+
+import modelo.Professor;
+
+public class TesteSetAll {
+
+	public static void main(String[] args) {
+		
+		Professor objetoProfessor = new Professor();
+	}
+}

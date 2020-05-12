@@ -1,0 +1,9 @@
+package modelo;
+
+public class Aluno {
+	public String nome;
+	private int numeroMatricula;
+	private String email; 
+
+
+}

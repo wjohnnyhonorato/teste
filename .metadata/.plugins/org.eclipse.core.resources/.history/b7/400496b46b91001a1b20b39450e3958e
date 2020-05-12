@@ -1,0 +1,19 @@
+package br.com.itau.beans.implementacao;
+
+import br.com.itau.beans.modelo.CompactDisc;
+import br.com.itau.beans.modelo.Livro;
+
+public class Principal {
+	
+	public static void main(String args[]) {
+		
+		Livro livro = new Livro(1233333, 26.50, "Narnia", "ISBN232323", "CS Lewis");
+		System.out.println("\n" + livro.getAll());
+		
+		CompactDisc compactDisc = new CompactDisc(232345, 30.90, "depois da Guerra", "sony","Oficina G3" );
+		System.out.println("\n" + compactDisc.getAll());
+	
+		}
+	}
+
+

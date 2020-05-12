@@ -1,0 +1,8 @@
+package modelo;
+
+public class ContaCorrente {
+	
+	private Double saldo;
+	private Cliente titularCliente;
+	
+}

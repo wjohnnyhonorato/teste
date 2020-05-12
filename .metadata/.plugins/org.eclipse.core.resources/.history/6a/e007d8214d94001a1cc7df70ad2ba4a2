@@ -1,0 +1,8 @@
+package Interface;
+
+public interface PadraoFormacao {
+	void calculaMensalidade (double fator);
+		
+	}
+
+

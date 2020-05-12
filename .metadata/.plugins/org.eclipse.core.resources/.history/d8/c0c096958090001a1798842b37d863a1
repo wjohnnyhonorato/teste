@@ -1,0 +1,15 @@
+package teste;
+
+import javax.swing.JOptionPane;
+
+import modelo.Aluno;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Aluno objetoAluno = new Aluno();
+		objetoAluno.adicionarNome(JOptionPane.showInputDialog("digite o nome"));
+		System.out.println("Ate logo...");
+	}
+	
+}

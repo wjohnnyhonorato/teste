@@ -1,0 +1,33 @@
+package br.com.itau.beans.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.itau.beans.modelo.CompactDisc;
+import br.com.itau.beans.modelo.Livro;
+
+public class Principal {
+	
+	public static void main(String args[]) {
+		
+		Livro livro = new Livro(1233333, 26.50, "Narnia", "ISBN232323", "CS Lewis");
+		System.out.println("\n" + livro.getAll());
+		
+		//CompactDisc compactDisc = new CompactDisc(232345, 30.90, "depois da Guerra", "sony","Oficina G3" );
+		//System.out.println("\n" + compactDisc.getAll());
+		
+		CompactDisc compactDisc = new CompactDisc(
+				Integer.parseInt(JOptionPane.showInputDialog ("\n insira o codigo do disco \n")),
+				Double.parseDouble(JOptionPane.showInputDialog ("\n insira o preco do disco \n")),
+				JOptionPane.showInputDialog("insira a descricao do disco").toUpperCase(),
+				JOptionPane.showInputDialog("insira a gravadora do disco").toUpperCase(),
+				JOptionPane.showInputDialog("insira o artista do disco").toUpperCase()
+				);
+		System.out.println("\n" + compactDisc.getAll());
+		
+		
+		
+	
+		}
+	}
+
+

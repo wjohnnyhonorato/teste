@@ -1,0 +1,61 @@
+package teste;
+
+import javax.swing.JOptionPane;
+
+import beans.Bacharelado;
+import beans.Medio;
+import beans.Tecnologo;
+
+public class testeInstancia {
+	
+	public static void main(String args[]) {
+		
+		///////////////////////// Instacmcia todas as classes filhas
+	
+		
+		String resposta = JOptionPane.showInputDialog("QUal formacao deseja cadastrar? \n <M> \n <T> \n <B>").toUpperCase();
+		
+		if (resposta.contentEquals("M")) {
+			
+			Medio medio = new Medio(
+					JOptionPane.showInputDialog("insira a descricao do curso").toUpperCase(),
+					Integer.parseInt(JOptionPane.showInputDialog ("insira o periodo")),
+					Double.parseDouble(JOptionPane.showInputDialog ("insira a mensalidade")),
+					Integer.parseInt(JOptionPane.showInputDialog ("insira a duracao")),
+					JOptionPane.showInputDialog("insira a descricao do curso").toUpperCase());
+			System.out.println("\n" + medio.getAll());
+		} 
+		else if (resposta.contentEquals("T")){
+			
+			Tecnologo objTecnologo = new Tecnologo(
+					JOptionPane.showInputDialog("insira a descricao do curso").toUpperCase(),
+					Integer.parseInt(JOptionPane.showInputDialog ("insira o periodo")),
+					Double.parseDouble(JOptionPane.showInputDialog ("insira a mensalidade")),
+					Integer.parseInt(JOptionPane.showInputDialog ("insira a duracao")),
+					Boolean.parseBoolean(JOptionPane.showInputDialog ("insira o periodo"));
+			System.out.println("\n" + objTecnologo.getAll());
+		}
+		else if (resposta.contentEquals("B")){
+					
+			Bacharelado bacharelado = new Bacharelado(
+							JOptionPane.showInputDialog("insira a descricao do curso").toUpperCase(),
+							Integer.parseInt(JOptionPane.showInputDialog ("insira o periodo")),
+							Double.parseDouble(JOptionPane.showInputDialog ("insira a mensalidade")),
+							Integer.parseInt(JOptionPane.showInputDialog ("insira a duracao")),
+							Boolean.parseBoolean(JOptionPane.showInputDialog ("insira o periodo"));
+					System.out.println("\n" + objTecnologo.getAll());
+				}
+		
+		
+		
+		
+		else {
+						
+			System.out.println("Opacao invalida");
+		}	
+		
+		
+		
+	}
+
+}

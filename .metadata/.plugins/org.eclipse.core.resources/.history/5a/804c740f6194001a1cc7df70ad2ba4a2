@@ -1,0 +1,22 @@
+import projetoPilha.Pilha;
+
+public class TesteFila {
+	public static void main (String[] args) {
+		
+	Pilha objeto = new Pilha();
+	System.out.println(objeto.cheio());
+	System.out.println(objeto.vazio());
+	
+	objeto.retirar();
+	
+	
+	System.out.println(objeto.retirar());
+	
+	objeto.inserir(12);
+	
+	
+	System.out.println(objeto.retirar());
+		
+	}
+
+}

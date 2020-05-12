@@ -1,0 +1,10 @@
+package beans;
+
+public class bacharelado extends formacao {
+	
+	private String projetoConclusao;
+	private int cargaHorariaEstagio;
+	
+	
+
+}

@@ -1,0 +1,10 @@
+
+public class TesteFila {
+	
+	private int ini;
+	private int fim;
+	private int vetor[];
+	private int total;
+	
+
+}

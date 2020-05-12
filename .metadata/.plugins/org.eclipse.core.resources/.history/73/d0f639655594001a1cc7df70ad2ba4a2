@@ -1,0 +1,12 @@
+package projetoPilha;
+
+public class Teste {
+	public static void main (String[] args) {
+	
+	Pilha objPilha = new Pilha();
+	System.out.println(objPilha.;
+
+	
+	}
+	
+}

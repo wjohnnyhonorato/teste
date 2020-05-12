@@ -1,0 +1,58 @@
+package teste;
+
+import javax.swing.JOptionPane;
+
+import beans.Bacharelado;
+import beans.Formacao;
+import beans.Medio;
+import beans.Tecnologo;
+
+public class testeInstancia {
+	
+	public static void main(String args[]) {
+		
+		Formacao objeto = null;
+		
+		
+		char resposta = JOptionPane.showInputDialog("QUal formacao deseja cadastrar? \n <M> \n <T> \n <B>").toUpperCase().charAt(0);
+		
+		if (resposta=='1') {
+			
+			objeto = new Medio(
+					JOptionPane.showInputDialog("insira a descricao do curso").toUpperCase(),
+					Integer.parseInt(JOptionPane.showInputDialog ("insira o periodo")),
+					0,
+					0,
+					JOptionPane.showInputDialog("insira o tipo do curso").toUpperCase());
+			System.out.println("\n" + medio.getAll());
+		} 
+		else if (resposta=='2'){
+			
+			Tecnologo objTecnologo = new Tecnologo(
+					JOptionPane.showInputDialog("insira a descricao do curso").toUpperCase(),
+					Integer.parseInt(JOptionPane.showInputDialog ("insira o periodo")),
+					Double.parseDouble(JOptionPane.showInputDialog ("insira a mensalidade")),
+					Integer.parseInt(JOptionPane.showInputDialog ("insira a duracao")),
+					Boolean.parseBoolean(JOptionPane.showInputDialog ("Plano estendido? sim <1> \n não <0>")));
+			System.out.println("\n" + objTecnologo.getAll());
+		}
+		else if (resposta=='3'){
+					
+			Bacharelado bacharelado = new Bacharelado(
+					JOptionPane.showInputDialog("insira a descricao do curso").toUpperCase(),
+					Integer.parseInt(JOptionPane.showInputDialog ("insira o periodo")),
+					Double.parseDouble(JOptionPane.showInputDialog ("insira a mensalidade")),
+					Integer.parseInt(JOptionPane.showInputDialog ("insira a duracao")),
+					JOptionPane.showInputDialog("Projeto de conclusao do curso").toUpperCase(),
+					Integer.parseInt(JOptionPane.showInputDialog ("carga horaria")));
+			System.out.println("\n" + bacharelado.getAll());
+		}
+						
+		else {
+						
+			System.out.println("Opacao invalida");
+		}	
+			
+	}
+
+}

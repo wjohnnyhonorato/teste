@@ -1,0 +1,22 @@
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class TesteLista {
+	public static void main (String[] args) {
+		//List lista = new List(); não é possivel criar diretamente pois List é uma interface
+		
+		// pode ser feito mas não é recomendado, pois o objeto fica fixo como array
+		//ArrayList lista = new ArrayList();
+		
+		List <String> lista = new ArrayList<>();
+		lista.add("ds");
+		lista.add("xpto");
+		lista.add("aa");
+		Collections.sort(lista);
+		
+		System.out.println(lista);
+	}
+
+}

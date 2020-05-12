@@ -1,0 +1,19 @@
+package br.com.universidade.implementacao;
+
+import br.com.universidade.modelo.Aluno;
+
+
+public class Principal {
+	
+	public static void main(String args[]) {
+	
+		
+	Aluno aluno = new Aluno("William","@hotmail","86864545",12341256,"pai");
+			
+		
+	
+	System.out.println(aluno.getAll());
+	
+	
+	}
+}

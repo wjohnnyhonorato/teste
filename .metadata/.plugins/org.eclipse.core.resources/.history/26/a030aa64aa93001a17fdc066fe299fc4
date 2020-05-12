@@ -1,0 +1,12 @@
+package beans;
+
+public class tecnologo extends formacao{
+	
+	private boolean planoEstendido;
+	
+	////////////////////////////////////////////////////qq
+
+
+	
+
+}

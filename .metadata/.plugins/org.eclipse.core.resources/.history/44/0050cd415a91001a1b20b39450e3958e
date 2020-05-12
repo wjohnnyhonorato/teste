@@ -1,0 +1,23 @@
+package br.com.universidade.implementacao;
+
+import br.com.universidade.modelo.Aluno;
+import modelo.Cliente;
+import modelo.ContaCorrente;
+import modelo.Endereco;
+
+public class Principal {
+	
+	public static vois main(String args[]) {
+	
+	Aluno aluno = new Aluno();
+	
+	
+	Aluno aluno = new Aluno("William","@hotmail","86864545",12341256,"pai");
+			
+		
+	
+	System.out.println(aluno.getAll());
+	
+	
+	}
+}

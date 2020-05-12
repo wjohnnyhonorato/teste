@@ -1,0 +1,28 @@
+package projetoPilha;
+
+public class Teste {
+	public static void main (String[] args) {
+	
+	Pilha idades = new Pilha();
+	System.out.println(idades.cheio());
+	System.out.println(idades.vazio());
+		
+	idades.inserir(50);
+	idades.inserir(50);
+	idades.inserir(50);
+	idades.inserir(50);
+	idades.inserir(50);
+	idades.inserir(50);
+	
+	System.out.println(idades.cheio());
+	System.out.println(idades.vazio());
+	
+	System.out.println(idades.cheio());
+	System.out.println(idades.vazio());
+	
+	
+	
+	
+	}
+	
+}

@@ -1,0 +1,8 @@
+package projetoPilha;
+
+public class Teste {
+	
+	Pilha objPilha = new Pilha();
+	System.out.println(objPilha.;
+
+}

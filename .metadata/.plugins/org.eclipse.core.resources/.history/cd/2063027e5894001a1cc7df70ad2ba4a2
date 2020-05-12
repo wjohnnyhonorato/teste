@@ -1,0 +1,24 @@
+package projetoPilha;
+
+public class Teste {
+	public static void main (String[] args) {
+	
+	Pilha objPilha = new Pilha();
+	System.out.println(objPilha.cheio());
+	System.out.println(objPilha.vazio());
+		
+	objPilha.inserir(50);
+	objPilha.inserir(50);
+	
+	System.out.println(objPilha.cheio());
+	System.out.println(objPilha.vazio());
+	
+	System.out.println(objPilha.cheio());
+	System.out.println(objPilha.vazio());
+	
+	
+	
+	
+	}
+	
+}

@@ -1,0 +1,20 @@
+package teste;
+
+import modelo.Aluno;
+import modelo.Endereco;
+
+public class TesteSetAll {
+
+	public static void main(String[] args) {
+		
+		Aluno objetoAluno = new Aluno();
+		Endereco objetoEndereco = new Endereco();
+		
+		objetoEndereco.setAll("rua", "32A", "ANrnia", "OZ", "SP", "1212-1212");
+		objetoAluno.setAll("bruno",445577, "@hotmail", objetoEndereco);
+	
+		System.out.println(objetoAluno.getAll());
+		System.out.println("Ate logo...");
+	}
+	
+}
